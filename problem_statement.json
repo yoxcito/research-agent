@@ -1,0 +1,64 @@
+{
+  "org": "Hackathon / Open Innovation",
+  "statement": "RepoPilot — AI Codebase Onboarding Agent",
+  "theme": "Developer Productivity & AI Engineering",
+  "description": {
+    "background": "Modern software projects can contain thousands or millions of lines of code distributed across multiple languages, frameworks, services, libraries, and repositories. When a developer joins an unfamiliar codebase, understanding its architecture, dependencies, execution flow, conventions, and undocumented business logic can take days or weeks. Existing documentation is often incomplete or outdated, while conventional code search and generic AI chatbots frequently provide shallow answers without sufficient grounding in the actual repository. This creates significant onboarding costs for engineering teams and makes maintenance of legacy systems difficult.",
+    "description": "This problem statement seeks the development of RepoPilot, an AI-powered Codebase Onboarding Agent that helps developers understand unfamiliar software repositories through grounded code analysis, architecture discovery, dependency analysis, execution-flow tracing, contextual question answering, and guided onboarding. The platform should ingest a codebase, analyze its source files and structural relationships, construct a searchable representation of the repository, and provide evidence-backed answers with direct references to relevant files, functions, classes, and code sections. The system should go beyond conventional Retrieval-Augmented Generation by combining semantic search, static code analysis, dependency graphs, repository metadata, and agentic reasoning.",
+    "objectives": [
+      "Analyze unfamiliar software repositories and automatically identify their overall architecture, major modules, services, components, and technologies.",
+      "Build an intelligent representation of relationships between files, functions, classes, modules, APIs, databases, external services, and dependencies.",
+      "Provide grounded natural-language answers to developer questions using evidence from the actual codebase.",
+      "Trace execution and data flows across multiple files and modules, such as request-to-database, authentication, payment, or API workflows.",
+      "Identify important entry points, configuration files, environment variables, APIs, background jobs, database models, and external integrations.",
+      "Generate automatically updated architecture diagrams and dependency visualizations from the repository.",
+      "Provide file-level and code-level citations for AI-generated explanations so developers can verify the reasoning.",
+      "Create personalized onboarding journeys for developers based on their role, such as frontend, backend, DevOps, security, or full-stack engineering.",
+      "Allow developers to ask questions such as where a feature is implemented, where a change should be made, what components depend on a function, and what could break if a component is modified.",
+      "Detect outdated, missing, or inconsistent documentation by comparing documentation with the actual implementation.",
+      "Identify high-complexity modules, tightly coupled components, potential technical debt, and areas that require additional developer attention.",
+      "Support large and multi-language repositories while maintaining contextual understanding across the codebase.",
+      "Provide incremental repository indexing so that new commits and code changes can update the AI knowledge base without requiring a complete re-analysis.",
+      "Maintain security and privacy by allowing analysis of private repositories without unnecessarily exposing source code or secrets."
+    ],
+    "impact": "RepoPilot should significantly reduce the time required for developers to understand unfamiliar codebases, accelerate onboarding, improve engineering productivity, reduce dependency on senior developers for routine questions, and make legacy software systems easier to maintain. By providing evidence-backed explanations and automatically generated architecture knowledge, the platform can act as an intelligent engineering mentor for both individual developers and software organizations."
+  },
+  "expected_solution": {
+    "overview": "A scalable AI-powered developer intelligence platform that combines code parsing, static analysis, semantic retrieval, dependency graphs, agentic reasoning, and interactive visualizations to provide a continuously updated understanding of software repositories.",
+    "features": [
+      "GitHub, GitLab, local repository, and archive-based codebase ingestion.",
+      "Multi-language source-code parsing and structural analysis.",
+      "AST-based extraction of functions, classes, modules, imports, APIs, and relationships.",
+      "Semantic code search combined with traditional symbol and text search.",
+      "AI-powered codebase question-answering grounded in repository evidence.",
+      "Automatic architecture discovery and interactive architecture visualization.",
+      "Function and dependency call-graph generation.",
+      "End-to-end execution-flow and data-flow tracing.",
+      "File-level and line-level evidence citations for AI responses.",
+      "Repository-wide dependency graph and impact analysis.",
+      "Interactive onboarding mode that teaches developers the codebase step by step.",
+      "Role-specific onboarding paths for frontend, backend, DevOps, security, and full-stack developers.",
+      "Feature discovery allowing users to ask where specific functionality is implemented.",
+      "Change-impact analysis showing which components may be affected by modifying a file, function, API, or database model.",
+      "Documentation consistency analysis comparing documentation with implementation.",
+      "Technical-debt and architectural-risk identification.",
+      "Automatic generation of repository summaries, module documentation, and architecture reports.",
+      "Incremental indexing based on Git commits and repository changes.",
+      "Support for monorepos and repositories containing multiple services or applications.",
+      "Secure handling of private repositories and sensitive source code.",
+      "Web-based dashboard for code exploration, AI interaction, architecture visualization, and onboarding progress."
+    ],
+    "outcomes": [
+      "Reduce developer onboarding time for unfamiliar repositories.",
+      "Improve understanding of complex and legacy software systems.",
+      "Reduce the number of repetitive questions directed toward senior engineers.",
+      "Enable faster debugging, feature discovery, and implementation planning.",
+      "Improve documentation quality and keep documentation aligned with source code.",
+      "Help developers identify architectural dependencies and potential change impact before modifying code.",
+      "Provide trustworthy AI assistance backed by verifiable source-code evidence.",
+      "Create a continuously updated knowledge layer over software repositories.",
+      "Improve engineering team productivity and reduce the cost of maintaining large codebases.",
+      "Provide a foundation for future autonomous software engineering and AI developer agents."
+    ]
+  }
+}
